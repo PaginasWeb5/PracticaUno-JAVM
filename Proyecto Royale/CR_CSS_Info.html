@@ -1,0 +1,182 @@
+
+<html lang="es">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="CR_Info_Style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+<link rel="shortcut icon" href="CR_Crown_Icon.ico">
+<title>CSS: Estilista de Sitios Web</title>
+
+</head>
+
+<body>
+    
+<section>
+
+    <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada">
+    
+        <img src="CSS_Logo.png" alt="CSS Logo" height="100%" width="100%">
+    
+    </a>
+
+    <h1 class="titulo">¿Que es CSS?</h1>
+
+    <p class="parrafo"> <b>Cascading Stylesheets</b> es un lenguaje de diseño gráfico para definir y crear la presentación <br>
+        de un documento estructurado escrito en un lenguaje de marcado.​ Es muy usado para establecer <br>
+        el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; <br>
+        el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera. <br>
+        También permite aplicar estilos no visuales, como las hojas de estilo auditivas. <br>
+
+    <br>
+
+    Mas que nada, sirve para decorar tus páginas web, desde efectos simples, <span class="legendaria">¡hasta las animaciones más complicadas!</span> </p> <br>
+
+    <br>
+
+    <p class="parrafo"> No es necesario tener que crear todo un archivo para guardar todos tus "estilos" ya que con<br>
+    el formato HTML basta con algunas cosas. Por ejemplo: <br>
+
+    <br>
+
+    <span class="codigo_flecha"><</span><span class="codigo_texto">p style="color:brown"</span><span class="codigo_flecha">></span>
+
+    <p style="color:brown" class="parrafo"> Hará que el color del texto sea café. <br> </p>
+
+    <p class="parrafo">
+
+    A veces, quieres cambiar muchas cosas, y no cabrá todo en una sola hoja, asi que llega CSS al rescate! <br>
+    Nadamas creas un archivo de CSS, pones todo el codigo ahi, lo vinculas al HTML que tu quieras, y listo! <br>
+
+    <br>
+
+    Para hacer eso, solo pones: <br>
+
+    <span class="codigo_flecha"><</span><span class="codigo_texto">link rel="stylesheet" href="Ejemplo.css"</span><span class="codigo_flecha">></span>
+    dentro de la pagina HTML, adentro del head y ya. </p> <br>
+
+    <br>
+
+    <h1 class="tit_carta">Estilos</h1>
+
+    <p class="parrafo">
+
+    <b>Fondos:</b> Primero declaras un elemento específico, si así lo deseas, quieres modificar. Por ejemplo: <br>
+
+    <br>
+
+    <span class="codigo_contenido">.body{ <br>
+
+        <br>
+
+        background-color: light-blue; <br>
+    
+        <br>
+    }</span> <br>
+
+    <br>
+
+    Y el fondo será azul ligero! <br>
+
+    <br>
+    
+    <b>Bordes:</b> Como anteriormente se hizo, se declara el elemento: <br>
+
+    <br>
+
+    <span class="codigo_contenido">.p{ <br>
+
+        <br>
+
+        border-color: red;
+        border-style: solid; <br>
+
+        <br>
+        
+    }</span> <br>
+
+    <br>
+
+    Y así se cambian los bordes! <br>
+
+    <br>
+
+    <br>
+
+    <br>
+
+    <b>Texto Animado:</b> Para hacer esto se requiere tener un poco de conocimiento sobre las animaciones en general. <br>
+
+    <br>
+
+    Depende de que color quieres, si lo quieres de izquierda a derecha, gradiente o no, todo a la vez o de letra por letra. <br>
+
+    <br>
+
+    Aun así, <span class="legendaria">nada es imposible!</span> <br>
+
+    Si quieres tener el efecto que puse de ejemplo, primero hay que declarar un @keyframes. <br>
+    Esta es la base para realizar cualquier animación que deseas. <br>
+
+    <br>
+
+    Como vamos a hacer el efecto un gradiente que afecte letra por letra, tendremos que declarar <br>
+    cada color en cada "fase" de la animación. Haremos que dure 6 segundos y que se repita por un número indefinido de veces. <br>
+
+    <br>
+
+    <span class="codigo_contenido">@keyframes colores{<br>
+
+        <br>
+
+        0% {color:#D68AB0;} <br>
+        25% {color:#D8CE5D;} <br>
+        50% {color:#6BD85D;} <br>
+        75% {color:#5DB9D8;} <br>
+        100% {color:#D85DCB;} <br>
+
+        <br>
+
+    }
+    </span> <br>
+
+    <br>
+
+    Despues de declarar, entonces pondremos el nombre del elemento (en este caso colores), para que <br>
+    cada vez que se pide a llamar el elemento "legendaria", aparecerá el texto animado! <br>
+
+    <br>
+
+    <span class="codigo_contenido">.legendaria{ <br>
+
+        <br>
+    
+        background-size: 1000%, 1000%; <br>
+        background-clip: text; <br>
+        animation-duration: 6s; <br>
+        animation-timing-function: ease; <br>
+        animation-delay: 0s; <br>
+        animation-direction: normal; <br>
+        animation-fill-mode: none; <br>
+        animation-iteration-count: infinite; <br>
+        animation-play-state: running; <br>
+        animation-name: colores; <br>
+        font-weight:bold <br>
+
+        <br>
+
+    }
+    </span> <br>
+
+    <br>
+
+    <span class="legendaria">Si todo lo hiciste bien, tu texto se verá así!</span>
+
+    </p>
+
+</section>
+
+</body>
+
+</html>
